@@ -1,0 +1,152 @@
+ 
+ *{box-sizing: border-box ;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+ }
+ nav{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 80px;
+     position: sticky; 
+     top:0;
+     width: 100%; 
+     z-index:1;
+     color: #ffffff;
+     background-color: #003153;
+ }
+
+ .logo{
+    font-family: 'Sriracha', cursive;
+   font-size: 32px;
+   letter-spacing: 2px;
+   
+ }
+.links{
+    display: flex;
+}
+ .links li{
+   
+list-style-type: none;
+margin-right: 40px;
+
+ }
+
+ .links li a{
+    font-weight: bold;
+text-decoration: none;
+color: #ffffff;
+ 
+ }
+
+.links li a::after{
+display: block;
+content: '';
+transform: translateX(-50%);
+height: 5px;
+background-color: #ffffff;
+position: relative;
+top:5px;
+left: 50%;
+width: 0;
+transition: .2s ease-in;
+}
+
+.links li a:hover::after{
+
+    width: 100%;
+    
+    
+     }
+
+
+ .bgImage{
+     
+     background-size: cover;
+   
+ background-image: url('table.jpg');
+ height:600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+
+    .uicookie{
+        color: #ffffff;
+        font-size: 36px;
+    }
+
+    #cookiebox{
+        max-width:50ch;
+        
+    text-align: center;
+    }
+
+    #cookiebox button{
+        border: none;
+outline: none;
+background-color: Transparent;
+padding: 15px 30px;
+margin: 30px 10px;
+border:2px solid #ffffff;
+color: #ffffff;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+transition: .3s ease-in;
+    }
+
+    
+    #cookiebox button:hover{ 
+background-color: #003153;
+border:2px solid #003153;
+    }
+
+   
+
+    .cardContainer{
+
+         
+         display: flex;
+         flex-wrap: wrap;
+ justify-content: center;
+    }
+
+    .icons{
+        display: block;
+        height: 50px;
+        filter: invert(39%) sepia(100%) saturate(6308%) hue-rotate(191deg) brightness(105%) contrast(100%);
+    }
+
+    .card{
+        max-width:30ch;
+         padding: 10px;
+         line-height: 1.6;
+        margin: 171px 30px;
+        letter-spacing: 1px;
+         
+    }
+.card p{
+    color: grey;
+}
+    .cardHeader{
+        color: #007cd3;
+        margin: 15px 0;
+    }
+
+    .card a{
+        display: block;
+        margin: 15px 0;
+        color: #007cd3;
+        text-decoration: none;
+        transition: .4s ease-in;
+    }
+
+    .card a:hover{
+        color: silver;
+    }
+
+    footer{
+
+        height: 60px;
+        background-color: #003153;
+    }
